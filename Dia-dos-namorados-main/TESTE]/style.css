@@ -1,0 +1,127 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fce4ec; /* Rosa claro, cor de romance */
+    color: #4a148c; /* Roxo escuro para o texto principal */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha no topo, mas permite centralização horizontal */
+    min-height: 100vh; /* Ocupa a altura total da viewport */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box; /* Inclui padding no cálculo da largura/altura */
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 0 C70 0 100 25 100 50 C100 75 70 100 50 100 C30 100 0 75 0 50 C0 25 30 0 50 0z" fill="%23f8bbd0" opacity="0.3"/></svg>'); /* Adiciona um coração de fundo sutil */
+    background-size: 100px;
+    background-repeat: repeat;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+    margin-top: 20px; /* Margem superior para separar do topo da tela */
+}
+
+h1 {
+    color: #e91e63; /* Rosa forte */
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.message {
+    font-size: 1.3em;
+    color: #6a1b9a; /* Roxo médio */
+    margin-bottom: 30px;
+}
+
+.countdown-container {
+    background-color: #f3e5f5; /* Lilás claro */
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-container p {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #880e4f; /* Vinho */
+}
+
+#countdown span {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #d81b60; /* Rosa escuro */
+    margin: 0 10px;
+    display: inline-block; /* Garante que os spans fiquem lado a lado */
+    min-width: 80px; /* Garante que os números grandes não quebrem */
+}
+
+#countdown small {
+    font-size: 0.9em;
+    color: #880e4f;
+    display: block; /* Quebra a linha para o texto "dias", "horas" */
+    margin-top: -10px; /* Ajusta o espaçamento */
+    margin-bottom: 15px;
+}
+
+.photo-section {
+    margin-top: 40px;
+    background-color: #ffebee; /* Rosa muito claro */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-section h2 {
+    color: #ad1457; /* Vinho claro */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.photo-placeholder img {
+    max-width: 100%; /* Garante que a imagem não transborde */
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #ef9a9a; /* Borda rosa para a foto */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.photo-placeholder p {
+    font-size: 1.1em;
+    color: #c2185b; /* Rosa escuro */
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.footer-message {
+    margin-top: 40px;
+    font-size: 1.1em;
+    color: #7b1fa2; /* Roxo mais escuro */
+    font-weight: bold;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    .message {
+        font-size: 1em;
+    }
+    #countdown span {
+        font-size: 2.5em;
+        margin: 0 5px;
+    }
+    #countdown small {
+        font-size: 0.8em;
+    }
+    .container {
+        padding: 20px;
+    }
+}
